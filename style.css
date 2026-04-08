@@ -4,9 +4,14 @@
 }
 
 body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-family: "inter", sans-serif;
-    padding: 20px;
-    width: 1200px;
+    padding: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+    
 }
 
 .header{
@@ -15,13 +20,13 @@ body{
 }
 
 .header nav{
-    
+    font-size: 18px;
     display: flex;
     flex-direction: row;
     justify-content: right;
     align-items: center;
     width: 100%;
-    gap: 20px;
+    gap: 60px;
 }
 
 .header nav a{
@@ -39,22 +44,25 @@ body{
     "main-img  main-img highlights"
     "title  cont  highlights"
     "n1  n2  n3";
-    gap: 10px;               
+    gap: 40px;               
 }
 
 .main div {
   height: auto;
   width: 100%;
+  
  
 }
 
 .main-img {
   grid-area: main-img;
+  min-height: 200px;
 }
 
 .main-img img{
   width: 100%;
   height: auto;
+
 }
 
 .title{
@@ -92,18 +100,21 @@ body{
 }
 
 .highlights{
+  display: flex;
+  flex-direction: column;
   color: white;  
   grid-area: highlights;
   background-color: hsl(240, 100%, 5%);
   padding: 20px;
   padding-top: 10px;
-  height: 100%;
+  flex: 1;
   
 }
 
 .highlights div{
   height: 20%;  
   margin-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.192);
 }
 
 .highlights h2{
@@ -113,7 +124,6 @@ body{
 
 .highlights hr{
   border: none;
-  border-top: 1px solid rgba(255, 255, 255, 0.36);
 }
 
 .highlights .bold{
@@ -129,8 +139,8 @@ body{
 }
 
 .n1 img{
-  width: 40%;
-  height: auto;
+  
+  object-fit: cover;
 }
 
 .n1 h3{
@@ -154,8 +164,8 @@ body{
 
 
 .n2 img{
-  width: 40%;
-  height: auto;
+ 
+  object-fit: cover;
 }
 
 .n2 h3{
@@ -178,8 +188,7 @@ body{
 }
 
 .n3 img{
-  width: 40%;
-  height: auto;
+  object-fit: cover;
 }
 
 .n3 h3{
